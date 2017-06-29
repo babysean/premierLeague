@@ -5,8 +5,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>Insert title here</title>
+<script type="text/javascript"></script>
 </head>
 <body>
-
+<jsp:include page="include/top.jsp"></jsp:include>
 </body>
 </html>
