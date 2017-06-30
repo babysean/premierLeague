@@ -7,6 +7,11 @@
 <title>Insert title here</title>
 <script type="text/javascript"></script>
 </head>
+<style>
+body{
+	padding-top: 70px;
+}
+</style>
 <body>
 <jsp:include page="include/top.jsp"></jsp:include>
 </body>

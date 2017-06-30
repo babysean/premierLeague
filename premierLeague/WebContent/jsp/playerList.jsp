@@ -22,9 +22,9 @@
 			// 응답값
 			datatype:"json",
 			// 그리드 높이
-			height:250,
+			height:100,
 			// 한 페이지에 출력할 데이터 개수
-			rowNum:2,
+			rowNum:4,
 			// 페이징 UI 적용을 위한 속성
 			pager:'#page',
 			// 컬럼명들
