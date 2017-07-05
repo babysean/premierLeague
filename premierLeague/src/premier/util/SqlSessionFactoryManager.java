@@ -1,4 +1,4 @@
-package primier.util;
+package premier.util;
 
 import java.io.Reader;
 import org.apache.ibatis.io.Resources;
@@ -9,7 +9,7 @@ public class SqlSessionFactoryManager {
 	private static SqlSessionFactory sqlSessionFactory;
 	static{
 		try {
-			Reader reader=Resources.getResourceAsReader("gopang/util/Config.xml");
+			Reader reader=Resources.getResourceAsReader("premier/util/Config.xml");
 			sqlSessionFactory=new SqlSessionFactoryBuilder().build(reader);
 		} catch (Exception e) {
 			// TODO: handle exception

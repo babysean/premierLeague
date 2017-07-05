@@ -22,23 +22,28 @@
 			// 응답값
 			datatype:"json",
 			// 그리드 높이
-			height:100,
+			height:500,
 			// 한 페이지에 출력할 데이터 개수
-			rowNum:4,
+			rowNum:10,
 			// 페이징 UI 적용을 위한 속성
 			pager:'#page',
 			// 컬럼명들
-			colNames:['시퀀스','제목','등록일','등록자명','조회수'],
+			colNames:['이름','국가','팀명','생년월일','키','몸무게','선호포지션','플레이스타일','포지션스탯','총스탯'],
 			// 컬럼모델
 			colModel:[
-				{name:'seq'},
-				{name:'title'},
-				{name:'create_date'},
-				{name:'create_name'},
-				{name:'hitnum'}
+				{name:'이름'},
+				{name:'국가'},
+				{name:'팀명'},
+				{name:'생년월일'},
+				{name:'키'},
+				{name:'몸무게'},
+				{name:'선호포지션'},
+				{name:'플레이스타일'},
+				{name:'포지션스탯'},
+				{name:'총스탯'}
 			],
 			// 그리드타이틀
-			caption:"그리드 목록"
+			caption:"선수"
 		});
 	});
 </script>

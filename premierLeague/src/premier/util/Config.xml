@@ -18,7 +18,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
     </typeAliases> -->
     <!-- DB연동 -->
     <typeAliases>
-    	<typeAlias type="primier.bean.player" alias="player"/>
+    	<typeAlias type="premier.bean.player" alias="player"/>
     </typeAliases>
     <environments default="development">
       <environment id="development">
@@ -57,7 +57,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
       </environment>
     </environments>
     <mappers>
-      <mapper resource="primier/xml/player.xml"/>
+      <mapper resource="premier/xml/player.xml"/>
     </mappers>
 </configuration>
 
