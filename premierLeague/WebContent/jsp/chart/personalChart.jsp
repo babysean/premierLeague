@@ -104,14 +104,20 @@ var chart = AmCharts.makeChart( "chartdiv", {
 			"value": 46
 		}  ],
 	"valueAxes": [ {
+		// 그래프와 value 의 거리		
 		"axisTitleOffset": 20,
+		// 값의 최소값
 		"minimum": 0,
+		// 중앙점에서 value를 연결한 선 굵기
 		"axisAlpha": 0.15
 	} ],
+	// 그래프가 그려지는 속도
 	"startDuration": 2,
 	"graphs": [ {
 			"balloonText": "[[value]] value of beer per year",
+			// 점 모양
 			"bullet": "round",
+			// 그래프 선 굵기
 			"lineThickness": 2,
 			"valueField": "value"
 	} ],
