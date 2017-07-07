@@ -22,43 +22,100 @@
 <!-- Chart code -->
 <script>
 var chart = AmCharts.makeChart( "chartdiv", {
-  "type": "radar",
-  "theme": "light",
-  "dataProvider": [ {
-    "country": "Czech Republic",
-    "litres": 156.9
-  }, {
-    "country": "Ireland",
-    "litres": 131.1
-  }, {
-    "country": "Germany",
-    "litres": 115.8
-  }, {
-    "country": "Australia",
-    "litres": 109.9
-  }, {
-    "country": "Austria",
-    "litres": 108.3
-  }, {
-    "country": "UK",
-    "litres": 99
-  } ],
-  "valueAxes": [ {
-    "axisTitleOffset": 20,
-    "minimum": 0,
-    "axisAlpha": 0.15
-  } ],
-  "startDuration": 2,
-  "graphs": [ {
-    "balloonText": "[[value]] litres of beer per year",
-    "bullet": "round",
-    "lineThickness": 2,
-    "valueField": "litres"
-  } ],
-  "categoryField": "country",
-  "export": {
-    "enabled": true
-  }
+	"type": "radar",
+	"theme": "light",
+	"dataProvider": [ {
+			"ability": "leadership",
+			"value": 46
+		}, {
+			"ability": "positionStat",
+			"value": 70
+		}, {
+			"ability": "potential",
+			"value": 80
+		}, {
+			"ability": "stamina",
+			"value": 70
+		}, {
+			"ability": "physical",
+			"value": 80
+		}, {
+			"ability": "composure",
+			"value": 48
+		}, {
+			"ability": "longRangeShot",
+			"value": 75
+		}, {
+			"ability": "shootingAccuracy",
+			"value": 81 
+		}, {
+			"ability": "shootingPower",
+			"value": 70
+		}, {
+			"ability": "freeKick",
+			"value": 80
+		}, {
+			"ability": "pace",
+			"value": 75
+		}, {
+			"ability": "acceleration",
+			"value": 60
+		}, {
+			"ability": "dribble",
+			"value": 90
+		}, {
+			"ability": "longPass",
+			"value": 99
+		}, {
+			"ability": "cross",
+			"value": 70
+		}, {
+			"ability": "pass",
+			"value": 70
+		}, {
+			"ability": "reaction",
+			"value": 75
+		}, {
+			"ability": "individualSkill",
+			"value": 50
+		}, {
+			"ability": "tackle",
+			"value": 60
+		}, {
+			"ability": "marking",
+			"value": 78
+		}, {
+			"ability": "heading",
+			"value": 71
+		}, {
+			"ability": "positiveness",
+			"value": 61
+		}, {
+			"ability": "handling",
+			"value": 90
+		}, {
+			"ability": "reflexes",
+			"value": 87
+		}, {
+			"ability": "diving",
+			"value": 99
+		}, {
+			"ability": "positioning",
+			"value": 46
+		}  ],
+	"valueAxes": [ {
+		"axisTitleOffset": 20,
+		"minimum": 0,
+		"axisAlpha": 0.15
+	} ],
+	"startDuration": 2,
+	"graphs": [ {
+			"balloonText": "[[value]] value of beer per year",
+			"bullet": "round",
+			"lineThickness": 2,
+			"valueField": "value"
+	} ],
+	"categoryField": "ability"
 } );
 </script>
 <body>
