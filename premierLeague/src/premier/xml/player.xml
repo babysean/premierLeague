@@ -4,12 +4,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="premier.xml.player">
 	<select id="selectAllPlayer" resultType="player">
-		SELECT	PLAYERNO, LEAGUENAME, TEAMNAME, BACKNUMBER, FIRSTNAME, LASTNAME, NATIONALITY,
-				BIRTHDATE, HEIGHT, WEIGHT ,BODYSIZE, FAVORITEPOSITION, PLAYSTYLE, MAINFOOT
-				WEAKFOOTABILITY, LEADERSHIP, POSITIONSTAT, RECOMMENDEDPOSITION, POTENTIAL,
-				TOTALSTAT, STAMINA, PHYSICAL, COMPOSURE, LONGRANGESHOT, SHOOTINGACCURACY, SHOOTINGPOWER,
-				FREEKICK, PACE, ACCELERATION, DRIBBLE, LONGPASS, CROSS, PASS, REACTION, INDIVIDUALSKILL,
-				TACKLE, MARKING, HEADING, POSITIVENESS, HANDLING, REFLEXES, DIVING, POSITIONING
-		FROM PLAYER            
+		select * from player
+	</select>
+	<select id="selectOnePlayer" parameterType="java.lang.String" resultType="player">
+		select * from player
+		where playerNo = #{playerNo}
 	</select>
 </mapper>

@@ -8,6 +8,7 @@
 <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
 <script src="https://www.amcharts.com/lib/3/radar.js"></script>
 <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<script src="http://www.amcharts.com/lib/3/plugins/dataloader/dataloader.min.js" type="text/javascript"></script>
 <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
 <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
 <title>Insert title here</title>
@@ -24,85 +25,10 @@
 var chart = AmCharts.makeChart( "chartdiv", {
 	"type": "radar",
 	"theme": "light",
-	"dataProvider": [ {
-			"ability": "leadership",
-			"value": 46
-		}, {
-			"ability": "positionStat",
-			"value": 70
-		}, {
-			"ability": "potential",
-			"value": 80
-		}, {
-			"ability": "stamina",
-			"value": 70
-		}, {
-			"ability": "physical",
-			"value": 80
-		}, {
-			"ability": "composure",
-			"value": 48
-		}, {
-			"ability": "longRangeShot",
-			"value": 75
-		}, {
-			"ability": "shootingAccuracy",
-			"value": 81 
-		}, {
-			"ability": "shootingPower",
-			"value": 70
-		}, {
-			"ability": "freeKick",
-			"value": 80
-		}, {
-			"ability": "pace",
-			"value": 75
-		}, {
-			"ability": "acceleration",
-			"value": 60
-		}, {
-			"ability": "dribble",
-			"value": 90
-		}, {
-			"ability": "longPass",
-			"value": 99
-		}, {
-			"ability": "cross",
-			"value": 70
-		}, {
-			"ability": "pass",
-			"value": 70
-		}, {
-			"ability": "reaction",
-			"value": 75
-		}, {
-			"ability": "individualSkill",
-			"value": 50
-		}, {
-			"ability": "tackle",
-			"value": 60
-		}, {
-			"ability": "marking",
-			"value": 78
-		}, {
-			"ability": "heading",
-			"value": 71
-		}, {
-			"ability": "positiveness",
-			"value": 61
-		}, {
-			"ability": "handling",
-			"value": 90
-		}, {
-			"ability": "reflexes",
-			"value": 87
-		}, {
-			"ability": "diving",
-			"value": 99
-		}, {
-			"ability": "positioning",
-			"value": 46
-		}  ],
+	"dataLoader": {
+		"url": "/premierLeague/jsp/data/personalValue.jsp",
+	    "format": "json"
+	},
 	"valueAxes": [ {
 		// 그래프와 value 의 거리		
 		"axisTitleOffset": 20,
@@ -114,7 +40,7 @@ var chart = AmCharts.makeChart( "chartdiv", {
 	// 그래프가 그려지는 속도
 	"startDuration": 2,
 	"graphs": [ {
-			"balloonText": "[[value]] value of beer per year",
+			"balloonText": "[[ability]] - [[value]]",
 			// 점 모양
 			"bullet": "round",
 			// 그래프 선 굵기
@@ -126,6 +52,7 @@ var chart = AmCharts.makeChart( "chartdiv", {
 </script>
 <body>
 <!-- HTML -->
+
 <div id="chartdiv"></div>
 </body>
 </html>

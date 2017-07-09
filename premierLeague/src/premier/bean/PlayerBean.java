@@ -15,7 +15,7 @@ public class PlayerBean {
 	private String favoritePosition;
 	private String playStyle;
 	private String mainFoot;
-	private int weakFootAbility;
+	private String weakFootAbility;
 	private int leadership;
 	private int positionStat;
 	private String recommendedPosition;
@@ -51,7 +51,7 @@ public class PlayerBean {
 
 	public PlayerBean(String playerNo, String leagueName, String teamName, String backNumber, String firstName,
 			String lastName, String nationality, String birthDate, int height, int weight, String bodySize,
-			String favoritePosition, String playStyle, String mainFoot, int weakFootAbility, int leadership,
+			String favoritePosition, String playStyle, String mainFoot, String weakFootAbility, int leadership,
 			int positionStat, String recommendedPosition, int potential, int totalStat, int stamina, int physical,
 			int composure, int longRangeShot, int shootingAccuracy, int shootingPower, int freeKick, int pace,
 			int acceleration, int dribble, int longPass, int cross, int pass, int reaction, int individualSkill,
@@ -215,11 +215,11 @@ public class PlayerBean {
 		this.mainFoot = mainFoot;
 	}
 
-	public int getWeakFootAbility() {
+	public String getWeakFootAbility() {
 		return weakFootAbility;
 	}
 
-	public void setWeakFootAbility(int weakFootAbility) {
+	public void setWeakFootAbility(String weakFootAbility) {
 		this.weakFootAbility = weakFootAbility;
 	}
 

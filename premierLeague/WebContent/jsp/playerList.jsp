@@ -16,7 +16,7 @@
 		// jqGrid 껍데기 생성
 		$("#list").jqGrid({
 			// ajax 호출할 페이지
-			url:'/premierLeague/jsp/data/playerData.jsp',
+			url:'/premierLeague/jsp/data/playerdd.jsp',
 			// 로딩중일때 출력시킬 로딩내용
 			loadtext:'로딩중..',
 			// 응답값
@@ -28,19 +28,19 @@
 			// 페이징 UI 적용을 위한 속성
 			pager:'#page',
 			// 컬럼명들
-			colNames:['이름','국가','팀명','생년월일','키','몸무게','선호포지션','플레이스타일','포지션스탯','총스탯'],
+			colNames:['firstName','birthDate','height','weight','nationality','teamName','favoritePosition','playStyle','positionStat','totalStat'],
 			// 컬럼모델
 			colModel:[
-				{name:'이름',index:'이름'},
-				{name:'생년월일'},
-				{name:'키'},
-				{name:'국가'},
-				{name:'팀명'},
-				{name:'몸무게'},
-				{name:'선호포지션'},
-				{name:'플레이스타일'},
-				{name:'포지션스탯'},
-				{name:'총스탯'}
+				{name:'firstName',index:'firstName'},
+				{name:'birthDate',index:'birthDate'},
+				{name:'height',index:'height'},
+				{name:'weight',index:'weight'},
+				{name:'nationality',index:'nationality'},
+				{name:'teamName',index:'teamName'},
+				{name:'favoritePosition',index:'favoritePosition'},
+				{name:'playStyle',index:'playStyle'},
+				{name:'positionStat',index:'positionStat'},
+				{name:'totalStat',index:'totalStat'}
 			],
 			// 그리드타이틀
 			caption:"선수"
