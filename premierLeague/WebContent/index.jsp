@@ -24,7 +24,8 @@
 </head>
 <body>
 <div class="layer">
-<a href="/primierLeague/jsp/primierLeagueMain.jsp"><img src="/primierLeague/img/indexImg.png"></a>
+<!-- <a href="/premierLeague/jsp/premierLeagueMain.jsp"><img src="/premierLeague/img/indexImg.png"></a> -->
+<a href="/premierLeague/jsp/playerList.jsp"><img src="/premierLeague/img/indexImg.png"></a>
 </div>
 </body>
 </html>
