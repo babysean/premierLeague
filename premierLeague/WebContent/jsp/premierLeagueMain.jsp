@@ -1,31 +1,21 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <link href="/premierLeague/css/bootstrap.min.css" rel="stylesheet">
 <link href="/premierLeague/css/sb-admin.css" rel="stylesheet">
 <link href="/premierLeague/font-awesome/css/font-awesome.min.css"
 	rel="stylesheet" type="text/css">
 <script src="/premierLeague/js/jquery.js"></script>
 <script src="/premierLeague/js/bootstrap.min.js"></script>
-<title>í”„ë¦¬ë¯¸ì–´ ë¦¬ê·¸ ì„ ìˆ˜ ë¹„êµ ì‚¬ì´íŠ¸</title>
-<style>
-
-</style>
-<script>
-$(function() {
-	
-});
-</script>
+<title>ÇÁ¸®¹Ì¾î ¸®±× ¼±¼ö ºñ±³ »çÀÌÆ®</title>
+<script type="text/javascript"></script>
 </head>
+<style>
+</style>
 <body>
-<jsp:include page="include/bar.jsp"/>
-<div class="row">
-	<div class="col-md-12">
-		<jsp:include page="playerAllTable.jsp"/>
-	</div>
-</div>
+<jsp:include page="include/bar.jsp"></jsp:include>
 </body>
 </html>

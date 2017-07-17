@@ -1,6 +1,7 @@
 package premier.dao;
 
 import java.io.Closeable;
+import java.util.HashMap;
 import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
@@ -29,12 +30,25 @@ public class PlayerDao {
 			e.printStackTrace();
 		}
 	}
-
-	public List<PlayerBean> selectAllPlayer() {
+	
+	public int getTotalRow(){
 		SqlSession sqlSession = null;
 		try {
 			sqlSession = sqlSessionFactory.openSession();
-			return sqlSession.selectList("selectAllPlayer");
+			return sqlSession.selectOne("getTotalRow");
+		} catch (Exception e) {
+			e.printStackTrace();
+			return -1;
+		} finally {
+			closeSqlSession(sqlSession);
+		}
+	}
+
+	public List<PlayerBean> selectAllPlayer(HashMap<String, Integer> map) {
+		SqlSession sqlSession = null;
+		try {
+			sqlSession = sqlSessionFactory.openSession();
+			return sqlSession.selectList("selectAllPlayer", map);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return null;
