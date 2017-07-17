@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<<<<<<< HEAD
 <link href="/premierLeague/css/bootstrap.min.css" rel="stylesheet">
 <link href="/premierLeague/css/sb-admin.css" rel="stylesheet">
 <link href="/premierLeague/font-awesome/css/font-awesome.min.css"
@@ -15,7 +16,16 @@
 </head>
 <style>
 </style>
+<script>
+</script>
 <body>
 <jsp:include page="include/bar.jsp"></jsp:include>
+</head>
+<style>
+body{
+	padding-top: 70px;
+}
+</style>
+<body>
 </body>
 </html>
