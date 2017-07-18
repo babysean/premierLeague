@@ -15,7 +15,7 @@
 <script src="/premierLeague/jqueryui/jquery-ui.js"></script>
 <style>
 div#listDiv {
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 }
 </style>
@@ -31,11 +31,11 @@ div#listDiv {
 					// 응답값
 					datatype : "json",
 					// 그리드 높이
-					height : 500,
+					height : 700,
 					// 그리드 넓이
 					autowidth : true,
 					// 한 페이지에 출력할 데이터 개수
-					rowNum : 10,
+					rowNum : 30,
 					// 페이징 UI 적용을 위한 속성
 					pager : '#page',
 					search : true,

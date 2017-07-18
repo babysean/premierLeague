@@ -12,6 +12,14 @@
 <script src="/premierLeague/js/bootstrap.min.js"></script>
 <title>프리미어 리그 선수 비교 사이트</title>
 <style>
+div.centerDiv{
+	text-align: center;
+	vertical-align: middle;
+}
+button{
+	background-color: white;
+	border: none;
+}
 </style>
 <script>
 	$(function() {
@@ -28,9 +36,13 @@
 				<!-- /.row -->
 				<div class="row">
 					<div class="col-lg-12">
-						<h2>전체선수목록</h2>
-						<div >
-							<jsp:include page="playerAllTable.jsp"/>
+						<h2>선수비교</h2>
+						<div class="col-lg-5 centerDiv">
+							<button><img src="/premierLeague/img/search.png"></button>
+						</div>
+						<div class="col-lg-2 centerDiv"><big><strong>vs</strong></big></div>
+						<div class="col-lg-5 centerDiv">
+							<button><img src="/premierLeague/img/search.png"></button>
 						</div>
 					</div>
 				</div>

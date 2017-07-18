@@ -51,73 +51,18 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="/premierLeague/jsp/playerVsPlayer.jsp">
 					<i class="fa fa-fw fa-bar-chart-o"></i> 선수 비교
 				</a>
 			</li>
-			
 			<li>
 				<a href="/premierLeague/jsp/playerList.jsp">
 					<i class="fa fa-fw fa-table"></i> 전체 선수 리스트
 				</a>
 			</li>
-			
 			<li>
-				<a href="#" data-toggle="collapse" data-target="#demo">
-					<i class="fa fa-fw fa-table"></i> Table 
-					<i class="fa fa-fw fa-caret-down"></i>
-				</a>
-				<ul id="demo" class="collapse">
-					<li>
-						<a href="#">
-							<i class="fa fa-fw fa-table"></i> Brand
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa fa-fw fa-table"></i> Master
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa fa-fw fa-table"></i> MasterRequest
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa fa-fw fa-table"></i> Member
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa fa-fw fa-table"></i> Menu
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa fa-fw fa-table"></i> Order
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa fa-fw fa-table"></i> Store
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa fa-fw fa-table"></i> UnSelected Store
-						</a>
-					</li>
-				</ul>
-			</li>
-			<li>
-            	<a href="#">
-            		<i class="fa fa-fw fa-edit"></i> Notice
-            	</a>
-            </li>
-            <li>
 				<a href="#">
-					<i class="fa fa-fw fa-edit"></i> Question & Answer
+					<i class="fa fa-fw fa-edit"></i> 자유게시판
 				</a>
 			</li>
 		</ul>

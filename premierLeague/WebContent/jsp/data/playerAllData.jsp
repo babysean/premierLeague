@@ -13,8 +13,9 @@
 	HashMap<String, Integer> map = new HashMap<String, Integer>();
 	// 현재페이지
 	String current_page = request.getParameter("page");
-	// 한페이지에 최대 몇개의 row 출력(mysql의 limit에 속하는데이터)
+	// 한페이지에 최대 몇개의 row 출력
 	String numper_page = request.getParameter("rows");
+	int row = Integer.parseInt(numper_page);
 	// 속성을 저장해줄 객체
 	JSONObject jsonObj = new JSONObject();
 	// jsonObject에 데이터를 저장해줄 객체
@@ -48,7 +49,7 @@
 	//현재페이지
 	jsonObj.put("page", current_page);
 	//총페이지수
-	jsonObj.put("total", dao.getTotalRow()%10!=0?dao.getTotalRow()/10+1:dao.getTotalRow()/10);
+	jsonObj.put("total", dao.getTotalRow()%row!=0?dao.getTotalRow()/row+1:dao.getTotalRow()/row);
 	//총글목록수
 	jsonObj.put("records", list.size());
 	
