@@ -5,7 +5,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <mapper namespace="premier.xml.player">
 	<sql id="allPlayer">
 		SELECT RM, PLAYERNO, LEAGUENAME, TEAMNAME, BACKNUMBER, FIRSTNAME, 
-			LASTNAME, NATIONALITY, TO_CHAR(BIRTHDATE, 'YYYY/MM/DD') BIRTHDATE, HEIGHT, WEIGHT, 
+			LASTNAME, NATIONALITY, BIRTHDATE, HEIGHT, WEIGHT, 
 			BODYSIZE, FAVORITEPOSITION, PLAYSTYLE, MAINFOOT, WEAKFOOTABILITY, LEADERSHIP, 
 			POSITIONSTAT, RECOMMENDEDPOSITION, POTENTIAL, TOTALSTAT, STAMINA, PHYSICAL, 
 			COMPOSURE, LONGRANGESHOT, SHOOTINGACCURACY, SHOOTINGPOWER, FREEKICK, PACE, 
@@ -24,7 +24,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	</sql>
 	<select id="selectAllPlayer" parameterType="java.util.HashMap" resultType="player">
 		<include refid="allPlayer"/>
-		WHERE RM BETWEEN #{start} AND #{end}
+		<where> RM BETWEEN #{start} AND #{end} </where>
 	</select>
 	<select id="selectOnePlayer" parameterType="java.lang.String" resultType="player">
 		<include refid="allPlayer"/>

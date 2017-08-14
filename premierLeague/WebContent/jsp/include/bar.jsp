@@ -45,24 +45,14 @@
 	<!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
 	<div class="collapse navbar-collapse navbar-ex1-collapse">
 		<ul class="nav navbar-nav side-nav">
-			<li class="active">
+			<li>
 				<a href="/premierLeague/jsp/premierLeagueMain.jsp">
 					<i class="fa fa-fw fa-dashboard"></i> 메인 페이지
 				</a>
 			</li>
-			<li>
-				<a href="/premierLeague/jsp/playerVsPlayer.jsp">
-					<i class="fa fa-fw fa-bar-chart-o"></i> 선수 비교
-				</a>
-			</li>
-			<li>
+			<li class="active">
 				<a href="/premierLeague/jsp/playerList.jsp">
 					<i class="fa fa-fw fa-table"></i> 전체 선수 리스트
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class="fa fa-fw fa-edit"></i> 자유게시판
 				</a>
 			</li>
 		</ul>
