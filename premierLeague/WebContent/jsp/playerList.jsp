@@ -20,7 +20,6 @@
 </script>
 </head>
 <body>
-
 	<div id="wrapper">
 		<jsp:include page="include/bar.jsp" />
 		<div id="page-wrapper">

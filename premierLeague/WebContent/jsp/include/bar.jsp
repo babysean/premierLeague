@@ -29,7 +29,7 @@
 		<!-- 내정보창 -->
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-				<i class="fa fa-user"></i> <%=id%> 
+				<i class="fa fa-user"></i> 박상훈 님
 				<b class="caret"></b>
 			</a>
 			<ul class="dropdown-menu">
@@ -50,9 +50,14 @@
 					<i class="fa fa-fw fa-dashboard"></i> 메인 페이지
 				</a>
 			</li>
-			<li class="active">
+			<li>
 				<a href="/premierLeague/jsp/playerList.jsp">
 					<i class="fa fa-fw fa-table"></i> 전체 선수 리스트
+				</a>
+			</li>
+			<li>
+				<a href="/premierLeague/jsp/playerGraph.jsp">
+					<i class="fa fa-fw fa-table"></i> 선수 능력치 그래프
 				</a>
 			</li>
 		</ul>
